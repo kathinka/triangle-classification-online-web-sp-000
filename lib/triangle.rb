@@ -1,3 +1,4 @@
+
 class Triangle
 attr_reader :x, :y, :z
 
