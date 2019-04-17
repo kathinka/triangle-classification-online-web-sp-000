@@ -12,6 +12,7 @@ class Triangle
 
     def kind
         validate
+        binding.pry
         if x == y && y == z
           :equilateral
         elsif x == y || y == z || z == x
@@ -26,12 +27,12 @@ class Triangle
         TriangleError
       elsif x+y < z || x+z <y || y+z < x
         TriangleError
-        binding.pry
+
       end
     end
 
     class TriangleError < StandardError
       # triangle error code
-    
+
     end
 end
