@@ -11,8 +11,8 @@ class Triangle
     end
 
     def kind
-      validate_triangle
-      #  validate
+      #validate_triangle
+        validate
         if x == y && y == z
           :equilateral
         elsif x == y || y == z || z == x
@@ -23,7 +23,7 @@ class Triangle
     end
 
     def validate
-      if (x+y < z || x+z <y || y+z < x)
+      if (x+y =< z || x+z =< y || y+z =< x)
         raise TriangleError
       elsif  (x <= 0 || y <= 0 || z <= 0)
         raise TriangleError
