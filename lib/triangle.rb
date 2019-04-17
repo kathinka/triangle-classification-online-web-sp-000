@@ -1,4 +1,4 @@
-require 'pry'
+Require 'pry'
 
 class Triangle
 
