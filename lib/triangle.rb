@@ -26,6 +26,7 @@ class Triangle
         TriangleError
       elsif x+y < z || x+z <y || y+z < x
         TriangleError
+        binding.pry
       end
     end
 
