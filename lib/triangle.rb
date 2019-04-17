@@ -8,6 +8,7 @@ class Triangle
       @x = x
       @y = y
       @z = z
+      binding.pry
     end
 
     def kind
