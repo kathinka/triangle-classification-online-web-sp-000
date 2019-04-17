@@ -1,5 +1,5 @@
 class Triangle
-attr_reader :equilateral,:isosceles,:scalene
+attr_reader :x, :y, :z
   def initialize (x,y,z)
     @x = x
     @y = y
