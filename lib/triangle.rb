@@ -22,7 +22,7 @@ class Triangle
     end
 
     def validate
-      if (x+y < z || x+z <y || y+z < x)
+      if (x+y <= z || x+z <=y || y+z <= x)
         TriangleError
       elsif  (x < 0 || y < 0 || z < 0)
         TriangleError
