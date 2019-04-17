@@ -4,7 +4,6 @@ attr_reader :equilateral,:isosceles,:scalene
     @x = x
     @y = y
     @z = z
-    kind
   end
 
   def validate
