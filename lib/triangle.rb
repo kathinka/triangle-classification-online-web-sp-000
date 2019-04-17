@@ -16,7 +16,7 @@ class Triangle
 
 
   def kind
-      validate
+      #validate
       if x == y && y == z
         :equilateral
       elsif x == y || y == z || z == x
