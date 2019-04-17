@@ -8,7 +8,7 @@ attr_reader :x, :y, :z
   end
 
   def kind
-      #validate
+      validate
       if x == y && y == z
         :equilateral
       elsif x == y || y == z || z == x
