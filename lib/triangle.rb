@@ -8,12 +8,10 @@ class Triangle
       @x = x
       @y = y
       @z = z
-      binding.pry
     end
 
     def kind
         validate
-        binding.pry
         if x == y && y == z
           :equilateral
         elsif x == y || y == z || z == x
@@ -24,9 +22,9 @@ class Triangle
     end
 
     def validate
-      if x <= 0 || y <= 0 || z <= 0
+      if (x+y < z || x+z <y || y+z < x)
         TriangleError
-      elsif x+y < z || x+z <y || y+z < x
+      elsif  (x <= 0 || y <= 0 || z <= 0)
         TriangleError
 
       end
