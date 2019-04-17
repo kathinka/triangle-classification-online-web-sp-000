@@ -6,15 +6,6 @@ attr_reader :equilateral,:isosceles,:scalene
     @z = z
   end
 
-  def validate
-    if x <= 0 || y <= 0 || z <= 0
-      TriangleError
-    elsif x+y < z || x+z <y || y+z < x
-      TriangleError
-    end
-  end
-
-
   def kind
       #validate
       if x == y && y == z
@@ -24,6 +15,14 @@ attr_reader :equilateral,:isosceles,:scalene
       else
         :scalene
       end
+  end
+
+  def validate
+    if x <= 0 || y <= 0 || z <= 0
+      TriangleError
+    elsif x+y < z || x+z <y || y+z < x
+      TriangleError
+    end
   end
 
   class TriangleError < StandardError
